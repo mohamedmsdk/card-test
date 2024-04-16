@@ -1,0 +1,9 @@
+services:
+  app:
+    build: ./
+    container_name: app
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/app
+    tty: true
